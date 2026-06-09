@@ -17,6 +17,6 @@
     <path d="M580 210 L720 210 L700 260 L600 260 Z" />
     <path d="M600 270 L700 270 L680 320 L620 320 Z" />
   </g>
-  <text x="48" y="220" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="56" font-weight="500" letter-spacing="-1.5">Fintech Onboarding</text>
-  <text x="48" y="262" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">PRODUCT</text>
+  <text x="48" y="220" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="56" font-weight="500" letter-spacing="-1.5">The Rollout Report</text>
+  <text x="48" y="262" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">PRODUCT · MEDIA</text>
 </svg>

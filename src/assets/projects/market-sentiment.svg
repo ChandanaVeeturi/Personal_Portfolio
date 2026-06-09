@@ -16,6 +16,7 @@
     <text x="540" y="140">▂ ▅ ▇ █ ▆ ▄ ▂ ▁ ▂</text>
     <text x="540" y="180">▆ ▄ ▂ ▁ ▃ ▅ ▇ █ ▆</text>
   </g>
-  <text x="48" y="220" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="56" font-weight="500" letter-spacing="-1.5">Market Sentiment NLP</text>
-  <text x="48" y="262" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">DATA</text>
+  <text x="48" y="210" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="48" font-weight="500" letter-spacing="-1.5">Web Application</text>
+  <text x="48" y="262" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="48" font-weight="500" letter-spacing="-1.5">Development</text>
+  <text x="48" y="298" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">TECH · WEB DEVELOPMENT</text>
 </svg>

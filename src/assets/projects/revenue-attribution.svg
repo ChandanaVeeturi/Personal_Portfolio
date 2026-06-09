@@ -18,6 +18,7 @@
     <rect x="678" y="160" width="32" height="170" rx="2" />
     <rect x="724" y="120" width="32" height="210" rx="2" />
   </g>
-  <text x="48" y="220" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="56" font-weight="500" letter-spacing="-1.5">Revenue Attribution</text>
-  <text x="48" y="262" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">PRODUCT · DATA</text>
+  <text x="48" y="210" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="48" font-weight="500" letter-spacing="-1.5">ETL Pipeline &amp;</text>
+  <text x="48" y="262" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="48" font-weight="500" letter-spacing="-1.5">Data Modeling</text>
+  <text x="48" y="298" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">DATA · ETL</text>
 </svg>

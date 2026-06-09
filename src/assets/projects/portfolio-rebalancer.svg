@@ -17,6 +17,6 @@
     <circle cx="690" cy="110" r="82" />
   </g>
   <circle cx="690" cy="110" r="6" fill="#fff" />
-  <text x="48" y="220" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="56" font-weight="500" letter-spacing="-1.5">Portfolio Rebalancer</text>
-  <text x="48" y="262" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">FINANCE</text>
+  <text x="48" y="220" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="56" font-weight="500" letter-spacing="-1.5">Data Canvas</text>
+  <text x="48" y="262" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">PRODUCT · DESIGN</text>
 </svg>

@@ -15,6 +15,7 @@
     <path d="M48 320 L160 240 L260 270 L380 200 L500 180 L620 130 L752 90" />
   </g>
   <circle cx="752" cy="90" r="6" fill="#fff" />
-  <text x="48" y="220" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="56" font-weight="500" letter-spacing="-1.5">Credit Risk Dashboard</text>
-  <text x="48" y="262" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">FINANCE · DATA</text>
+  <text x="48" y="210" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="48" font-weight="500" letter-spacing="-1.5">Automated Data</text>
+  <text x="48" y="262" fill="#fff" font-family="DM Serif Display, Georgia, serif" font-size="48" font-weight="500" letter-spacing="-1.5">Ingestion Pipeline</text>
+  <text x="48" y="298" fill="rgba(255,255,255,0.6)" font-family="DM Mono, monospace" font-size="13" letter-spacing="3">DATA · ETL</text>
 </svg>
