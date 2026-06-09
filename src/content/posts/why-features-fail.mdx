@@ -1,0 +1,111 @@
+---
+title: "Why Most Product Features Fail Before a Single Line of Code Is Written"
+excerpt: Lessons from requirements gathering, stakeholder alignment, and translating business problems into successful product solutions.
+pubDate: 2026-06-10
+tag: Product Management
+readTime: 7
+featured: true
+---
+
+There is a moment in every failed product feature that gets glossed over in the post-mortem.
+
+It is not the moment the bug was introduced. It is not when the design went wrong, or when the wrong framework was chosen. It is much earlier — usually in a meeting room, sometimes in a document, occasionally in an email thread that trailed off without resolution.
+
+It is the moment when nobody clearly defined what the feature was actually supposed to do, and everyone walked away believing they understood.
+
+This is where most features fail. Before a design is drawn. Before a ticket is written. Before a single line of code is touched.
+
+---
+
+## The Illusion of Shared Understanding
+
+Business stakeholders, product managers, and engineering teams all speak about the same features using the same words — and mean completely different things.
+
+A finance team asks for a "reconciliation report." To them, it means a specific daily export reconciling portfolio positions against the custodian's records, formatted exactly as their operations team has used for three years. To the engineer building it, "reconciliation report" means a table showing matched and unmatched transactions. To the product manager, it means a dashboard with filter controls.
+
+All three are reasonable interpretations. None of them is wrong in isolation. But when each person leaves the kickoff meeting assuming their interpretation is the shared one, the feature that gets built satisfies nobody.
+
+This is not a failure of intelligence. It is a failure of process — specifically, the process of requirements gathering.
+
+---
+
+## What Requirements Gathering Actually Is
+
+Requirements gathering has a reputation for being bureaucratic. Analysts write long documents. Stakeholders sign them off without reading them. Engineers implement something different anyway.
+
+That reputation is earned — but it describes bad requirements gathering, not the thing itself.
+
+Good requirements gathering is a structured conversation about what success looks like. It surfaces assumptions, exposes disagreements, and forces precision on questions that everyone would prefer to leave vague. Its product is not a document. The document is just the record. The real product is shared understanding.
+
+Done well, it answers five questions before the work begins:
+
+**What problem are we actually solving?**
+Not the feature being requested, but the underlying problem driving the request. Stakeholders ask for features. They need solutions. The feature they've asked for may not be the best solution — but you can only evaluate that if you understand the problem.
+
+**Who is affected, and how?**
+Every feature has multiple stakeholders with potentially conflicting needs. The operations team that will use the feature daily has different priorities than the executive who approved the budget. Understanding both — and being explicit about which takes precedence when they conflict — prevents painful surprises during UAT.
+
+**What does success look like, specifically?**
+Not "the report is accurate" but "the report matches the custodian's position file to within £0.01 for every line item, and discrepancies above that threshold trigger an automated flag." Vague success criteria cannot be tested. Untestable criteria produce features that technically pass review and practically don't work.
+
+**What are the edge cases?**
+The main flow is easy. It is the 3% of cases that break systems — the transaction that arrives with no counterparty, the customer who exists in two source systems with different spellings of their name, the date field that occasionally arrives blank. Edge cases defined during requirements can be handled deliberately. Edge cases discovered during UAT become expensive bugs.
+
+**What are we explicitly not doing?**
+Scope creep does not usually announce itself. It arrives as reasonable additions, each one small and logical, that collectively reshape the feature into something much larger than intended. Documenting what is out of scope — and why — is as important as documenting what is in scope.
+
+---
+
+## Where Alignment Breaks Down
+
+Even well-gathered requirements can fail if stakeholder alignment is treated as a one-time event rather than a continuous process.
+
+The most common failure modes:
+
+**The silent disagreement.** A stakeholder nods in a requirements meeting but has a different expectation. They don't raise it because they assume it will resolve itself, or because they don't want to slow things down. It surfaces during UAT, when reversing it is expensive.
+
+**The late stakeholder.** A key decision-maker is not in the room during requirements gathering. They see the feature for the first time during review — and their feedback requires rebuilding something the team considered closed.
+
+**The assumption that requirements don't change.** Business conditions change. Regulatory requirements shift. A product pivot mid-sprint is disruptive but sometimes unavoidable. Teams that treat the initial requirements document as a contract struggle to adapt. Teams that treat it as a living baseline adapt more gracefully.
+
+**The handoff gap.** Requirements gathered by a business analyst get handed to an engineering team. In that handoff, context is lost — the reasoning behind decisions, the edge cases that were discussed but didn't make it into the document, the business logic that was explained verbally. What arrives is a set of specifications without the understanding that makes them navigable.
+
+---
+
+## Translating Business Problems into Product Solutions
+
+The gap between what a business needs and what gets built is usually a translation problem.
+
+Business stakeholders think in outcomes. They want the reconciliation to be faster, the reporting to be more accurate, the onboarding process to have fewer manual steps. They describe what they want in terms of the problem it solves, not in terms of system behaviour.
+
+Engineering teams think in systems. They need to know inputs, outputs, data formats, business rules, error handling. They need precision where the business language is approximate.
+
+The translator between these two worlds is the business analyst — and the translation tool is the requirement artefact. BRDs, user stories, process flows, wireframes, use cases. Each of these serves a different purpose and communicates a different dimension of what is being built.
+
+A user story tells the engineering team who will use the feature and what goal they are trying to achieve. A process flow shows the sequence of steps and decision points. A wireframe communicates interface intent without prescribing implementation. A BRD documents the business context and formal requirements. Used together, they build a picture complete enough to build from — and specific enough to test against.
+
+The artefact itself is less important than the thinking it forces. Writing a user story requires you to be clear about who the user is and what they actually need. Drawing a process flow reveals steps that were assumed but never explicitly defined. Producing a wireframe surfaces disagreement about how a feature should work before that disagreement becomes embedded in code.
+
+---
+
+## A Pattern Worth Building
+
+The teams that consistently deliver features that work — not just technically, but for the people who use them — tend to share a few habits.
+
+They invest time upfront. Not endless time, but enough to surface the assumptions and resolve the disagreements before work begins. An hour of requirements conversation saves ten hours of rework.
+
+They make the implicit explicit. Every assumption is written down. Every edge case is named. Every out-of-scope decision is documented. The goal is to have no surprises during implementation.
+
+They keep stakeholders close throughout. Not just at the beginning and end, but at regular intervals during delivery. Incremental checkpoints are faster to correct than full-build reviews.
+
+They treat requirements as a baseline, not a contract. When reality changes — and it will — they update the baseline, assess the impact, and communicate clearly. The goal is not to defend the original specification but to deliver the right outcome.
+
+---
+
+## The Feature That Gets Built Right
+
+Features that succeed are not necessarily the most technically impressive ones. They are the ones where the team building them understood — precisely, in writing, with edge cases defined — what the people using them needed.
+
+That understanding does not happen by accident. It is the product of structured conversation, careful translation, and relentless precision about what "done" actually means.
+
+The code is the easy part. The hard part is the work that happens before it.

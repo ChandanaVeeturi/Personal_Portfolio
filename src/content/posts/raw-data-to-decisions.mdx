@@ -1,0 +1,124 @@
+---
+title: "From Raw Data to Business Decisions: What Happens Between the Database and the Dashboard?"
+excerpt: A practical walkthrough of how modern ETL pipelines transform messy operational data into insights that executives can trust.
+pubDate: 2026-06-10
+tag: Data Engineering
+readTime: 8
+featured: true
+---
+
+Every business runs on data. Sales records, loan portfolios, customer transactions, operational logs — it all sits somewhere in a database. And somewhere else, an executive is looking at a dashboard making a decision based on that data.
+
+But what happens in between?
+
+Most people assume it's simple. The data is in the database, the dashboard reads it, done. In reality, the journey from a raw database record to a trusted business insight involves a chain of systems, transformations, validations, and judgment calls — and when any part of that chain breaks, the decision made at the other end can be dangerously wrong.
+
+This is a walkthrough of that journey.
+
+---
+
+## The Problem with Raw Data
+
+Raw operational data is built to record things, not to explain them.
+
+A transaction table records that a payment was made. It doesn't tell you whether that payment was on time, whether the customer has a history of defaults, or whether this payment pattern is anomalous compared to the portfolio average. That context has to be constructed — from multiple tables, across multiple systems, often with conflicting definitions.
+
+Consider a simple question: *How many active loans does our portfolio have today?*
+
+To answer it, you might need to:
+
+- Define what "active" means (Is a loan in a 30-day grace period active? What about one that's been restructured?)
+- Join three or four tables across different source systems
+- Handle records where the status field has been updated inconsistently
+- Exclude test accounts and internal entries that shouldn't appear in reporting
+- Apply business rules that exist in a spreadsheet, not the database
+
+None of this is in the raw data. It has to be built.
+
+---
+
+## What ETL Actually Does
+
+ETL stands for Extract, Transform, Load — but those three words hide a lot of complexity.
+
+### Extract: Getting the Data Out
+
+The first step is pulling data from source systems. This sounds straightforward until you realise that most organisations have data in multiple places: a core banking system, a CRM, a loan origination platform, manual Excel uploads, and sometimes a legacy system that predates everyone currently working there.
+
+Each source has its own format, its own quirks, and its own update frequency. Some systems push data in real time. Others batch-export overnight. Some use ISO date formats; others use regional formats that look identical until they're not.
+
+A good extraction layer handles all of this consistently — capturing what changed, when, and flagging anything that looks wrong before it enters the pipeline.
+
+### Transform: Making the Data Useful
+
+This is where most of the work happens, and where most of the risk lives.
+
+Transformation includes:
+
+- **Standardisation** — converting different date formats, currency codes, and status labels into a single consistent schema
+- **Cleansing** — handling nulls, duplicates, and outliers in a defined, documented way
+- **Enrichment** — joining data across sources to add context (attaching a customer's credit score to their transaction record, for example)
+- **Business rule application** — encoding the logic that turns a raw status field into a meaningful category like "performing," "watch-list," or "defaulted"
+- **Validation** — running checks to ensure the output meets expected ranges and formats before it moves downstream
+
+The transformation layer is where business logic lives in code. That's both its strength — it's consistent and auditable — and its risk. If the business rule is wrong, or the logic hasn't been updated after a product change, every downstream report inherits the error silently.
+
+### Load: Putting It Where It Needs to Go
+
+The final step is writing the transformed data to the destination — usually a data warehouse, a reporting database, or an analytics platform.
+
+How this is done matters. A full reload every night is simple but slow and resource-intensive. Incremental loads are faster but require careful handling of updates and deletions. The choice of loading strategy affects data freshness, system performance, and how quickly errors can be detected and corrected.
+
+---
+
+## Where It Goes Wrong
+
+In practice, ETL pipelines fail in predictable ways. The ones worth watching for:
+
+**Silent data quality issues.** A field that should never be null starts arriving null for 3% of records. No alert fires. The dashboard numbers drift slowly, and nobody notices until a quarterly review.
+
+**Schema changes in source systems.** An upstream team adds a column, renames a field, or changes a data type. The pipeline breaks — or worse, continues running but produces wrong results.
+
+**Business rule drift.** The product changes, but nobody updates the transformation logic. The definition of "active" quietly diverges from what the business actually means.
+
+**Volume assumptions.** A pipeline built for 10,000 records a day starts receiving 500,000. Performance degrades, jobs time out, data arrives late or not at all.
+
+**Dependency failures.** One source system is delayed. The pipeline runs anyway, producing a report that looks complete but is missing two days of data from one feed.
+
+Good pipeline design anticipates these. It builds in validation checks, alerting, and reconciliation steps that make failures visible before they become decisions made on bad data.
+
+---
+
+## What Good Looks Like
+
+A well-designed data pipeline has a few characteristics that separate it from one that just happens to work most of the time.
+
+**It has documented business logic.** Every transformation rule is written down and version-controlled. When someone asks "why does this number look different from last quarter?" there's a clear audit trail.
+
+**It validates at every layer.** Row counts are checked. Expected ranges are asserted. Referential integrity is confirmed. Nothing moves to the next layer without passing a defined quality gate.
+
+**It separates concerns clearly.** Raw data is preserved as it arrived. Transformed data is clearly labelled as such. The reporting layer sits on top of validated, documented datasets — not directly on raw operational tables.
+
+**It fails loudly.** When something goes wrong, the right people know immediately. Not through a user noticing a wrong number on a dashboard, but through an automated alert that identifies exactly which step failed and why.
+
+**It's built for change.** Source systems evolve, business definitions change, new data needs emerge. A good pipeline makes these changes manageable rather than catastrophic.
+
+---
+
+## The Human Layer
+
+Technology solves the mechanical parts of ETL. The harder part is the human layer.
+
+Data pipelines are built by engineers, but the logic they encode comes from business stakeholders — analysts, finance teams, product managers — who understand what the data should mean. When that translation happens well, the output is trusted. When it happens poorly, even technically perfect pipelines produce numbers that nobody believes.
+
+The most impactful thing a business analyst can do in a data organisation is bridge that gap. Not just writing requirements, but sitting in the room when the data model is being designed, asking "what does this field actually mean in practice?" and making sure the answer gets encoded correctly.
+
+---
+
+## From Database to Decision
+
+The distance between a raw database record and a business decision is not a technical gap. It's a trust gap.
+
+Executives use dashboards to make decisions when they trust that the numbers reflect reality. That trust is built — slowly, carefully — through documented logic, consistent validation, visible failures, and a culture that treats data quality as a first-class concern.
+
+ETL pipelines are the infrastructure of that trust. Getting them right isn't glamorous work. But it's the work that everything else depends on.
