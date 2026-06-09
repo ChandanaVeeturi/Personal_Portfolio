@@ -255,6 +255,39 @@ a {
   flex-wrap: wrap;
 }
 
+.side-projects {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.side-projects-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.side-projects-sep {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.side-project-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent-light);
+  transition: border-color 0.2s;
+}
+
+.side-project-link:hover {
+  border-bottom-color: var(--accent);
+}
+
 .btn-primary {
   background: var(--accent);
   color: #fff;
