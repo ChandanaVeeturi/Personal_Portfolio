@@ -15,7 +15,5 @@
   "order": 5,
   "image": "../../assets/projects/market-sentiment.svg",
   "imageAlt": "Web Application Development banner",
-  "links": [
-    { "label": "Case study", "href": "#" }
-  ]
+  "links": []
 }

@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="bg-rg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#9b2c5e" />
       <stop offset="100%" stop-color="#e85577" />
     </linearGradient>
-    <radialGradient id="grain" cx="20%" cy="80%" r="55%">
+    <radialGradient id="grain-rg" cx="20%" cy="80%" r="55%">
       <stop offset="0%" stop-color="#fff" stop-opacity="0.22" />
       <stop offset="100%" stop-color="#fff" stop-opacity="0" />
     </radialGradient>
   </defs>
-  <rect width="800" height="400" fill="url(#bg)" />
-  <rect width="800" height="400" fill="url(#grain)" />
+  <rect width="800" height="400" fill="url(#bg-rg)" />
+  <rect width="800" height="400" fill="url(#grain-rg)" />
   <g fill="rgba(255,255,255,0.20)">
     <circle cx="540" cy="120" r="3" />
     <circle cx="600" cy="160" r="3" />
