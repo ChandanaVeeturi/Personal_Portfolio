@@ -15,6 +15,6 @@
   "image": "../../assets/projects/fintech-onboarding.svg",
   "imageAlt": "The Rollout Report banner",
   "links": [
-    { "label": "Visit site", "href": "https://www.therolloutreport.com" }
+    { "label": "Visit site", "href": "https://therolloutreport.com/" }
   ]
 }
