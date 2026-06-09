@@ -1,20 +1,20 @@
 {
-  "domain": "Product",
-  "title": "Fintech Onboarding Audit",
-  "description": "A three-week funnel + qualitative research sprint for a digital bank. Mapped where users were dropping off, why, and what to do about it.",
-  "role": "Product analyst",
-  "period": "2023",
+  "domain": "Product · Media",
+  "title": "The Rollout Report",
+  "description": "Built a product platform that showcases newly launched products, AI tools, and startups, helping users discover innovative technologies through curated launches, product reviews, and trend analysis.",
+  "role": "Personal Project · Product Manager",
+  "period": "Side project · 2025",
   "highlights": [
-    "Funnel + 12 user interviews over 3 weeks",
-    "Cut onboarding drop-off by 34%",
-    "Findings adopted into the next quarter's roadmap"
+    "Curated and analyzed emerging products across AI, SaaS, fintech, and developer tools",
+    "Designed a structured product discovery experience with categorized launches and product insights",
+    "Created a centralized hub for tracking technology rollouts and market trends"
   ],
-  "stack": ["SQL", "Mixpanel", "Figma", "Notion"],
+  "stack": ["Product Management", "Market Research", "Startup Ecosystem", "AI", "Web Development"],
   "category": "product",
   "order": 4,
   "image": "../../assets/projects/fintech-onboarding.svg",
-  "imageAlt": "Fintech Onboarding Audit banner",
+  "imageAlt": "The Rollout Report banner",
   "links": [
-    { "label": "Read the post", "href": "/blog/fintech-onboarding" }
+    { "label": "Visit site", "href": "https://www.therolloutreport.com" }
   ]
 }

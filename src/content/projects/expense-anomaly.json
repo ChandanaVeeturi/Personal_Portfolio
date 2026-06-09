@@ -1,20 +1,18 @@
 {
-  "domain": "Finance · Product",
-  "title": "Expense Anomaly Detector",
-  "description": "Real-time flagging of unusual corporate-card transactions using unsupervised clustering. Designed to keep the operations review queue short and the false-positive rate honest.",
-  "role": "Backend + ML",
-  "period": "2024",
+  "domain": "Product · Business Analysis",
+  "title": "Requirements Gathering & Product Delivery",
+  "description": "Served as the bridge between business stakeholders, product teams, and engineering teams, driving the successful delivery of platform enhancements and operational initiatives across multiple business functions at Chegg.",
+  "role": "Business Analyst",
+  "period": "2018 – 2022",
   "highlights": [
-    "Real-time clustering on Kafka streams",
-    "False-positive rate kept below 4%",
-    "Operations team review queue cut by 60%"
+    "Gathered, analyzed, and documented business requirements for 100+ development initiatives",
+    "Created BRDs, FRDs, use cases, process flows, wireframes, and user stories to support product development",
+    "Managed requirement traceability, backlog prioritization, and sprint planning through JIRA and Agile methodologies"
   ],
-  "stack": ["Kafka", "Sklearn", "React", "FastAPI"],
-  "category": "finance",
+  "stack": ["Business Analysis", "BRD", "FRD", "JIRA", "Agile", "Wireframing", "User Stories", "Stakeholder Management"],
+  "category": "product",
   "order": 6,
   "image": "../../assets/projects/expense-anomaly.svg",
-  "imageAlt": "Expense Anomaly Detector banner",
-  "links": [
-    { "label": "Architecture", "href": "#" }
-  ]
+  "imageAlt": "Requirements Gathering & Product Delivery banner",
+  "links": []
 }
