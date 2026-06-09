@@ -1,19 +1,19 @@
 {
-  "domain": "Finance · Data",
-  "title": "Credit Risk Dashboard",
-  "description": "End-to-end pipeline scoring loan applicants on alternative data signals — built to make underwriters' calls faster and more defensible.",
-  "role": "Lead developer",
+  "domain": "Data · ETL",
+  "title": "Automated Data Ingestion Pipeline",
+  "description": "Built an automated ingestion framework using Alteryx to streamline the collection, transformation, and validation of investment and loan portfolio data from multiple source systems.",
+  "role": "Lead Analyst · Oxane Partners",
   "period": "2024 – 2025",
   "highlights": [
-    "Reduced default rate by 18% via alternative-data signals",
-    "XGBoost pipeline serving 50k+ applicants",
-    "Streamlit dashboard adopted across the credit team in 6 weeks"
+    "Reduced manual processing effort by 80% through workflow automation",
+    "Automated ingestion, cleansing, and validation across multiple data sources",
+    "Improved data accuracy and reduced reporting turnaround time for business teams"
   ],
-  "stack": ["Python", "XGBoost", "Streamlit", "PostgreSQL"],
+  "stack": ["Alteryx", "SQL", "Data Validation", "ETL", "Automation"],
   "category": "finance",
   "order": 1,
   "image": "../../assets/projects/credit-risk-dashboard.svg",
-  "imageAlt": "Credit Risk Dashboard banner",
+  "imageAlt": "Automated Data Ingestion Pipeline banner",
   "links": [
     { "label": "Case study", "href": "#" }
   ]

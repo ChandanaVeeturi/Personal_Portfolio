@@ -1,20 +1,21 @@
 {
-  "domain": "Data",
-  "title": "Market Sentiment NLP",
-  "description": "Scraped earnings call transcripts across eight quarters and built a sentiment model that quietly correlates with 30-day price movement. Now part of an internal research workflow.",
-  "role": "Data scientist",
-  "period": "2022",
+  "domain": "Tech · Web Development",
+  "title": "Web Application Development",
+  "description": "Contributed to the design and development of responsive web applications in a fast-paced development environment, collaborating with senior developers to build user-facing features and improve application functionality.",
+  "role": "Intern Developer",
+  "period": "2023",
   "highlights": [
-    "Eight quarters of earnings transcripts ingested",
-    "Sentiment score correlated 0.41 with 30-day price",
-    "Embedded into an internal research dashboard"
+    "Developed and enhanced web application components using modern front-end technologies",
+    "Collaborated with cross-functional teams to translate business requirements into functional user experiences",
+    "Participated in debugging, testing, and deployment activities to ensure application quality and performance",
+    "Worked within Agile development cycles, contributing to feature delivery and continuous improvements"
   ],
-  "stack": ["spaCy", "HuggingFace", "PostgreSQL", "Airflow"],
-  "category": "data",
+  "stack": ["HTML", "CSS", "JavaScript", "Web Development", "Agile", "Software Development", "UI/UX"],
+  "category": "product",
   "order": 5,
   "image": "../../assets/projects/market-sentiment.svg",
-  "imageAlt": "Market Sentiment NLP banner",
+  "imageAlt": "Web Application Development banner",
   "links": [
-    { "label": "Methods note", "href": "#" }
+    { "label": "Case study", "href": "#" }
   ]
 }

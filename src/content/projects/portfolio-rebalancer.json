@@ -1,20 +1,20 @@
 {
-  "domain": "Finance",
-  "title": "Portfolio Rebalancer",
-  "description": "Side project — an automated rebalancing tool with tax-loss harvesting baked in. Started as a script for myself, ended up handling five asset classes and a small set of beta users.",
-  "role": "Solo build",
-  "period": "Side project · 2024",
+  "domain": "Product · Design",
+  "title": "Data Canvas",
+  "description": "Building a platform that transforms complex data, product, and business concepts into visually engaging case studies, helping professionals showcase their work through interactive storytelling instead of static resumes and documents.",
+  "role": "Personal Project · Product Designer",
+  "period": "Side project · 2025",
   "highlights": [
-    "Tax-loss harvesting logic across 5 asset classes",
-    "Custom user constraints (sector caps, ESG filters)",
-    "FastAPI backend with ~120ms p95 latency"
+    "Designed the product vision, user journeys, and information architecture from scratch",
+    "Built responsive web experiences focused on clarity, storytelling, and visual-first content",
+    "Exploring AI-powered features for content generation, project documentation, and portfolio creation"
   ],
-  "stack": ["Python", "Pandas", "FastAPI", "Postgres"],
-  "category": "finance",
+  "stack": ["HTML", "CSS", "JavaScript", "React", "AI", "Product Design", "UX Strategy"],
+  "category": "product",
   "order": 3,
   "image": "../../assets/projects/portfolio-rebalancer.svg",
-  "imageAlt": "Portfolio Rebalancer banner",
+  "imageAlt": "Data Canvas banner",
   "links": [
-    { "label": "GitHub", "href": "https://github.com/" }
+    { "label": "Visit site", "href": "https://www.datacanvas.design" }
   ]
 }
